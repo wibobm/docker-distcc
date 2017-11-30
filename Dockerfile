@@ -10,7 +10,7 @@ RUN apt-get update \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists
 
-COPY entrypoint.sh /entrypiont.sh
+COPY entrypoint.sh /entrypoint.sh
 
 EXPOSE 3632
-ENTRYPOINT ["/entrypiont.sh"]
+ENTRYPOINT ["/entrypoint.sh"]
